@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
 	{
@@ -96,6 +96,18 @@ export const ProjectSection = () => {
 						</div>
 					))}
 				</div>
+
+				<div className="pt-3 flex justify-center">
+                    <a
+                        href="https://github.com/SusavanMondal"
+                        className="font-serif cosmic-button bg-blue-500 text-black border border-blue-950 flex items-center gap-2 px-6 py-2 rounded-full"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Check My GitHub
+                        <ArrowRight className="w-5 h-5 text-black" />
+                    </a>
+                </div>
 			</div>
 		</section>
 	);
