@@ -3,12 +3,22 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
 	{
 		id: 1,
-		title: "Skill and Project Matrix Management",
+		title: "Skill and Project Matrix Management(backend)",
 		description:
 			"A comprehensive system to manage employee skills and project allocations. Built using ABP.IO, Entity Framework, PostgreSQL, and React with features like role-based access, filtering, and analytics.",
 		image: "/projects/skill-matrix.png",
 		tag: ["ABP.IO", "PostgreSQL", "React"],
-		demoUrl: "#",
+		demoUrl: "https://github.com/SusavanMondal/skill-matrix-management",
+		githubUrl: "#",
+	},
+	{
+		id: 3,
+		title: "Skill and Project Matrix Management(frontend)",
+		description:
+			"A comprehensive system to manage employee skills and project allocations. Built using ABP.IO, Entity Framework, PostgreSQL, and React with features like role-based access, filtering, and analytics.",
+		image: "/projects/skill-matrix.png",
+		tag: ["ABP.IO", "PostgreSQL", "React"],
+		demoUrl: "https://github.com/SusavanMondal/skill-matrix-management-frontend",
 		githubUrl: "#",
 	},
 	{
@@ -18,8 +28,8 @@ const projects = [
 			"A Twitter sentiment analysis app built with Python, Streamlit, and a pre-trained ML model. It detects sentiments of tweets in real time and marks Indian disaster-related tweets.",
 		image: "/projects/tweetsentiment.png",
 		tag: ["Python", "Streamlit", "Machine Learning"],
-		demoUrl: "#",
-		githubUrl: "#",
+		demoUrl: "https://tweetsentiment-by-susovan.streamlit.app/",
+		githubUrl: "https://github.com/SusavanMondal/TweetSentiment",
 	},
 	{
 		id: 3,
