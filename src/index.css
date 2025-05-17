@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes scroll {
+    0%, 100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(6px);
+      opacity: 0.6;
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 1.5s infinite;
+  }
+}
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));

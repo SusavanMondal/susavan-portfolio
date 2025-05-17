@@ -29,5 +29,5 @@ export const ThemeChange=()=>{
             setDarkMode(true)
         }
     }
-    return  <button onClick={changeTheme}>{isDark ? <Sun className="h-5 w-5 text-yellow-300"/> : <Moon className="h-5 w-5 text-blue-700"/>}</button>
+    return  <button onClick={changeTheme} className="fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300 focus:outline-hidden">{isDark ? <Sun className="h-5 w-5 text-yellow-300 "/> : <Moon className="h-5 w-5 text-blue-700"/>}</button>
 }
