@@ -18,6 +18,8 @@ const skills = [
     { name: "ASP.NET Core", level: 87, category: "Backend" },
     { name: "Entity Framework", level: 83, category: "Backend" },
     { name: "REST API", level: 90, category: "Backend" },
+    { name: "ABP.IO", level: 90, category: "Backend" },
+
 
     // Database
     { name: "PostgreSQL", level: 90, category: "Database" },
