@@ -63,19 +63,21 @@ export const ContactMe = () => {
                   key={index} 
                   className="flex items-start space-x-6 group p-4 rounded-xl hover:bg-primary/5 transition-all duration-300"
                 >
-                  <div className="p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                  <div className="p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors shrink-0">
                     {item.icon}
                   </div>
-                  <div className="space-y-1">
+                  <div className="space-y-1 min-w-0"> {/* Added min-w-0 for proper text wrapping */}
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="text-muted-foreground hover:text-primary transition-all hover:translate-x-1 inline-block"
+                        className="text-muted-foreground hover:text-primary transition-all hover:translate-x-1 inline-block break-words w-full text-sm sm:text-base"
                       >
                         {item.value}
                       </a>
                     ) : (
-                      <span className="text-muted-foreground">{item.value}</span>
+                      <span className="text-muted-foreground break-words w-full text-sm sm:text-base">
+                        {item.value}
+                      </span>
                     )}
                   </div>
                 </div>
