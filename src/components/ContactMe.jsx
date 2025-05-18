@@ -31,6 +31,7 @@ export const ContactMe = () => {
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       value: "Budge Budge, Kolkata, West Bengal, 700137",
+      href: "https://maps.app.goo.gl/ZXygrmwNhJoPjQKx5"
     },
   ];
 
@@ -66,10 +67,12 @@ export const ContactMe = () => {
                   <div className="p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors shrink-0">
                     {item.icon}
                   </div>
-                  <div className="space-y-1 min-w-0"> {/* Added min-w-0 for proper text wrapping */}
+                  <div className="space-y-1 min-w-0">
                     {item.href ? (
                       <a
                         href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-all hover:translate-x-1 inline-block break-words w-full text-sm sm:text-base"
                       >
                         {item.value}
